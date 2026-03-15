@@ -1,0 +1,29 @@
+{
+  "inbounds": [{
+    "port": 1080,
+    "protocol": "socks",
+    "settings": {
+      "auth": "noauth",
+      "udp": true
+    }
+  }],
+  "outbounds": [{
+    "protocol": "vless",
+    "settings": {
+      "vnext": [{
+        "address": "tr-1.stunnel.cc",
+        "port": 8442,
+        "users": [{
+          "id": "39382039-3720-4438-a039-392035332035",
+          "encryption": "none",
+          "flow": "xtls-rprx-vision"
+        }]
+      }]
+    },
+    "streamSettings": {
+      "network": "tcp",
+      "security": "reality",
+      "realitySettings": {
+        "serverName": "creativecommons.org",
+        "fingerprint": "chrome",
+        "publicKey": "pFRfJJDY6TYJq-OVgAqFXhda
