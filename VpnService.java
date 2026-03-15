@@ -12,4 +12,15 @@ public class VpnService extends VpnService {
         V2Ray.start();
         // ...
     }
+    // Ajoute V2Ray core
+import com.v2ray.ang.V2Ray;
+
+public class VpnService extends VpnService {
+    @Override
+    public int onStartCommand(Intent intent, int flags, int startId) {
+        V2Ray.init(this);
+        V2Ray.start();
+        // ...
+    }
+}
 }
